@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily : {
+      'display' : ['Poppins', 'sans-serif'],
+      'Inter' : ['Inter','sans-serif']
+    }
   },
   plugins: [],
 }
