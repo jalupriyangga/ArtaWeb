@@ -39,6 +39,16 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
+// IMPORT PRODUCT CARD
+// import {
+//   Card,
+//   CardHeader,
+//   CardBody,
+//   CardFooter,
+//   Typography,
+//   Button,
+// } from "@material-tailwind/react";
+
 
 function App() {
   const [showVideo, setShowVideo] = useState(false);
@@ -51,14 +61,14 @@ function App() {
     arrows: false,
     dots: true,
     infinite: true,
-    //speed: 8000,
+    speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
     initialSlide: 0,
     swipeToSlide: true,
-    // autoplay: true,    
-    //   autoplaySpeed: 5000,
-    //   cssEase: "linear",
+    autoplay: true,    
+      autoplaySpeed: 3000,
+      cssEase: "linear",
 
     responsive: [
       {
@@ -92,14 +102,14 @@ function App() {
     arrows: false,
     dots: true,
     infinite: true,
-    speed: 8000,
+    speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
     initialSlide: 0,
     swipeToSlide: true,
     rtl: true,
     autoplay: true,    
-      autoplaySpeed: 0,
+      autoplaySpeed: 3000,
       cssEase: "linear",
 
     responsive: [
@@ -226,10 +236,23 @@ function App() {
               </button>
             </div>
           )}
-        <div className='w-full pb-[250px] mb-[500px] mt-[230px] px-[312px] rounded-tl-[100px] rounded-br-[100px] ' style={{
+        <div className='w-full pb-[250px] mb-[0px] mt-[230px] px-[312px] rounded-tl-[100px] rounded-br-[100px] ' style={{
           background: 'linear-gradient(180deg, #00AF46 0%, #338755 40.1%, #338755 61.46%, #0CAE4D 89.58%) '
         }}>
-          <div className='w-full flex mt-[250px] items-center justify-center '>
+          
+          {/* <div className='w-full flex mt-[250px] items-center justify-center '> */}
+          <div className="mt-[250px] flex w-full h-full items-center flex-col relative">
+            <div className='w-[1026px]  text-center font-medium leading-[56px] mt-[40px] '>
+              <h1 className="text-white text-[48px] font-['Poppins']">Our Product:
+              <span className='text-black'> Unleash the Power of Agriculture Excellence</span></h1>
+            </div>
+            <div className='w-[814px] h-full text-center mt-[40px] '>
+              <h1 className="text-[20px] font-['Inter'] text-[#ffffffff] ">Transforming Farms with Cutting-edge Technology and <br />Sustainable Practices</h1>
+            </div>
+          </div>
+          
+          {/* VISION AND MISSION */}
+          {/* <div className='w-full flex mt-[250px] items-center justify-center '>
             <h1 className="font-['Poppins']  text-[42px] font-semibold text-white">
               Vision & Mission
             </h1>
@@ -277,14 +300,17 @@ function App() {
                 </h1>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
+
+
+
         {/* OUR CLIENT & SUPPORTED BY */}
           <div className="mt-[0px] flex-none w-full h-[700px] bg-[#ffffffff] pt-[40px]">
             <div>
               {/* OUR CLIENTS TITLE */}
               <div className="w-full h-[47px] flex items-center justify-center mb-[30px]">
-                <h1 className="text-[30px] font-['Hint Madurai'] text-[#338755]">Our Clients</h1>
+                <h1 className="text-[48px] font-['Hint Madurai'] text-[#338755]">Our Clients</h1>
               </div>
                 {/* OUR CLIENTS SLIDER */}
                 <Slider {...settings}>
@@ -334,10 +360,10 @@ function App() {
                           </div>
                     </div>
                 </Slider>
-                <br /> <br />
+                <br /> <br /><br />
                 {/* SUPPORTED BY TITLE */}
                 <div className="w-full h-[47px] flex items-center justify-center mb-[30px]">
-                  <h1 className="text-[30px] font-['Hint Madurai'] text-[#338755]">Supported By</h1>
+                  <h1 className="text-[48px] font-['Hint Madurai'] text-[#338755]">Supported By</h1>
                 </div>
                 {/* SUPPORTED BY SLIDER */}
                 <Slider {...settings2}>
