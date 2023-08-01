@@ -31,10 +31,10 @@ import yayasan_apsai from './images/clients/yayasan-apsai.png'
 
 // IMPORT FILES
 import './App.css';
-
+import { useState } from 'react';
 
 // IMPORT FILES REACT SLICK
-import React, { Component, useState } from "react";
+import React, { Component} from "react";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -51,11 +51,11 @@ import 'slick-carousel/slick/slick-theme.css'
 
 
 function home() {
-  const [showVideo, setShowVideo] = useState(false);
+  // const [showVideo, setShowVideo] = useState(false);
 
-  const handlePlayVideo = () => {
-    setShowVideo(true);
-  };
+  // const handlePlayVideo = () => {
+  //   setShowVideo(true);
+  // };
 
   var settings = {
     arrows: false,
@@ -197,7 +197,7 @@ function home() {
           </div>
 
           {/* Vidio youtube */}
-          {showVideo ? (
+          {/* {showVideo ? (
             <div className="absolute top-[350px]">
               <iframe
                 className='rounded-[30px]'
@@ -235,7 +235,7 @@ function home() {
                 </svg>
               </button>
             </div>
-          )}
+          )} */}
         <div className='w-full pb-[250px] mb-[0px] mt-[230px] px-[312px] rounded-tl-[100px] rounded-br-[100px] ' style={{
           background: 'linear-gradient(180deg, #00AF46 0%, #338755 40.1%, #338755 61.46%, #0CAE4D 89.58%) '
         }}>

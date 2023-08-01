@@ -38,5 +38,53 @@
 }
 
 /* CAROUSEL */
-/* .slick-initialized { overflow: auto; } */
+.slick-slide > div {
+  margin: 0 10px;
+}
 
+.slick-list {
+  margin: 0 -10px;
+}
+
+.slick-track {
+  margin: 0 -10px;
+}
+
+.Galeri{
+  display: block;
+  width: 60%;
+  margin: auto;
+  margin-right: 50px;
+}
+
+.slick-next {
+  right: -25px;
+}
+
+.slick-prev:before{
+  background: url("panahprev.png") ;
+  background-size: 55px 55px;
+  width: 60px;
+  height: 60px;
+  content: '' !important;
+  position: absolute;
+  bottom: -100px;
+  left: -300px;
+  border: 0.1875em solid #0F1C3F;
+  border-radius: 50%;
+  border-color: #338755;
+  }
+  
+  .slick-next:before{
+  background: url("panahnext.png") ;
+  background-size: 55px 55px;
+  width: 60px;
+  height: 60px;
+  content: '' !important;
+  position: absolute;
+  bottom: -100px;
+  left: -900px;
+  border: 0.1875em solid #0F1C3F;
+  border-radius: 50%;
+  border-color: #338755;
+  }

@@ -68,12 +68,12 @@ import pengiriman from './images/our-value/pengiriman.png'
 // } from "@material-tailwind/react";
 
 
-function App() {
-  const [showVideo, setShowVideo] = useState(false);
+function aboutUs() {
+  // const [showVideo, setShowVideo] = useState(false);
 
-  const handlePlayVideo = () => {
-    setShowVideo(true);
-  };
+  // const handlePlayVideo = () => {
+  //   setShowVideo(true);
+  // };
 
   var settings = {
     arrows: false,
@@ -672,4 +672,4 @@ function App() {
   )
 }
 
-export default App;
+export default aboutUs;

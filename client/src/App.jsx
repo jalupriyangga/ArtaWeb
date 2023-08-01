@@ -49,8 +49,26 @@ import 'slick-carousel/slick/slick-theme.css'
 //   Button,
 // } from "@material-tailwind/react";
 
+// IMPORT REACT ROUTER DOM
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import about from './aboutUs'
+
+// import {
+//   RouterProvider,
+// } from "react-router-dom";
+// import router from './router'
 
 function App() {
+
+  const App = () => {
+    <Router>
+      <Routes>
+        <Route path="/about" element={<about />}/>
+      </Routes>
+    </Router>
+  }
+
+
   const [showVideo, setShowVideo] = useState(false);
 
   const handlePlayVideo = () => {
@@ -495,6 +513,14 @@ function App() {
       
     </>
   )
+
+  // return (
+  //   <RouterProvider
+  //     router={router}
+  //     future={{ v7_startTransition: true }}
+  //   />
+  // );
+
 }
 
 export default App;
