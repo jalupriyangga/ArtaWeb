@@ -1,40 +1,40 @@
-import logo from '../images/Frame (1).png'
-import textLogo from '../images/text-artagrow.png'
-import bg_home from '../images/bg-hero1.jpeg'
-// import CEO from './images/CEO.png'
-// import vision from './images/icon/growth.png'
-// import palm from './images/icon/palm.png'
-// import harvest from './images/icon/harvest (1).png'
-// import service from './images/icon/public-service.png'
+import logo from './images/Frame (1).png'
+import textLogo from './images/text-artagrow.png'
+import bg_home from './images/bg-hero1.jpeg'
+import CEO from './images/CEO.png'
+import vision from './images/icon/growth.png'
+import palm from './images/icon/palm.png'
+import harvest from './images/icon/harvest (1).png'
+import service from './images/icon/public-service.png'
 
 // FOTO CLIENT
-import ayam_cao from '../images/clients/ayam.png'
-import bakmie_hokki from '../images/clients/bakmie-hokki.jpeg'
-import hydroponic_farm from '../images/clients/hydroponic-farm.jpeg'
-import katering from '../images/clients/katering.png'
-import kebab from '../images/clients/kebab.png'
-import kedai from '../images/clients/kedai.png'
-import kober from '../images/clients/kober.png'
-import lowcal from '../images/clients/lowcal.png'
-import tomo from '../images/clients/tomo.jpg'
+import ayam_cao from './images/clients/ayam.png'
+import bakmie_hokki from './images/clients/bakmie-hokki.jpeg'
+import hydroponic_farm from './images/clients/hydroponic-farm.jpeg'
+import katering from './images/clients/katering.png'
+import kebab from './images/clients/kebab.png'
+import kedai from './images/clients/kedai.png'
+import kober from './images/clients/kober.png'
+import lowcal from './images/clients/lowcal.png'
+import tomo from './images/clients/tomo.jpg'
 
 // FOTO SUPPORTED BY
-import awmm_ub from '../images/clients/awmm-ub.png'
-import bem_fia_ub from '../images/clients/bem-fia-ub-22.png'
-import bem_fp_ub from '../images/clients/bem-fp-ub-21.png'
-import eo from '../images/clients/eo-logo.png'
-import GN1000startup from '../images/clients/Logo_Gerakan_Nasional_1000_Startup_Digital.png'
-import AstraStartupCom from '../images/clients/Logo-Astra-Startup-Community.png'
-import SD_Bareng3 from '../images/clients/sd-bareng-3.png'
-import UB from '../images/clients/UB.png'
-import yayasan_apsai from '../images/clients/yayasan-apsai.png'
+import awmm_ub from './images/clients/awmm-ub.png'
+import bem_fia_ub from './images/clients/bem-fia-ub-22.png'
+import bem_fp_ub from './images/clients/bem-fp-ub-21.png'
+import eo from './images/clients/eo-logo.png'
+import GN1000startup from './images/clients/Logo_Gerakan_Nasional_1000_Startup_Digital.png'
+import AstraStartupCom from './images/clients/Logo-Astra-Startup-Community.png'
+import SD_Bareng3 from './images/clients/sd-bareng-3.png'
+import UB from './images/clients/UB.png'
+import yayasan_apsai from './images/clients/yayasan-apsai.png'
 
 // IMPORT FILES
-import '../App.css';
-import { useState, useEffect, useRef } from "react";
+import './App.css';
+import { useState } from 'react';
 
 // IMPORT FILES REACT SLICK
-import React, { Component} from "react";
+import React, { Component } from "react";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -49,13 +49,31 @@ import 'slick-carousel/slick/slick-theme.css'
 //   Button,
 // } from "@material-tailwind/react";
 
+// IMPORT REACT ROUTER DOM
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import about from '../aboutUs'
 
-function home() {
-  // const [showVideo, setShowVideo] = useState(false);
+// import {
+//   RouterProvider,
+// } from "react-router-dom";
+// import router from './router'
 
-  // const handlePlayVideo = () => {
-  //   setShowVideo(true);
-  // };
+function App() {
+
+  const App = () => {
+    <Router>
+      <Routes>
+        <Route path="/about" element={<about />}/>
+      </Routes>
+    </Router>
+  }
+
+
+  const [showVideo, setShowVideo] = useState(false);
+
+  const handlePlayVideo = () => {
+    setShowVideo(true);
+  };
 
   var settings = {
     arrows: false,
@@ -197,7 +215,7 @@ function home() {
           </div>
 
           {/* Vidio youtube */}
-          {/* {showVideo ? (
+          {showVideo ? (
             <div className="absolute top-[350px]">
               <iframe
                 className='rounded-[30px]'
@@ -235,7 +253,7 @@ function home() {
                 </svg>
               </button>
             </div>
-          )} */}
+          )}
         <div className='w-full pb-[250px] mb-[0px] mt-[230px] px-[312px] rounded-tl-[100px] rounded-br-[100px] ' style={{
           background: 'linear-gradient(180deg, #00AF46 0%, #338755 40.1%, #338755 61.46%, #0CAE4D 89.58%) '
         }}>
@@ -495,6 +513,14 @@ function home() {
       
     </>
   )
+
+  // return (
+  //   <RouterProvider
+  //     router={router}
+  //     future={{ v7_startTransition: true }}
+  //   />
+  // );
+
 }
 
-export default home;
+export default App;
