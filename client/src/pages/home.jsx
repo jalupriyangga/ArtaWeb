@@ -1,5 +1,5 @@
-import logo from '../images/Frame (1).png'
-import textLogo from '../images/text-artagrow.png'
+// import logo from '../images/Frame (1).png'
+// import textLogo from '../images/text-artagrow.png'
 import bg_home from '../images/bg-hero1.jpeg'
 // import CEO from './images/CEO.png'
 // import vision from './images/icon/growth.png'
@@ -29,15 +29,31 @@ import SD_Bareng3 from '../images/clients/sd-bareng-3.png'
 import UB from '../images/clients/UB.png'
 import yayasan_apsai from '../images/clients/yayasan-apsai.png'
 
+// IMPORT FOTO KONTAK
+import green_house from '../images/green_house-kontak.png';
+
+// IMPORT PRODUK
+import artamart from '../images/artamart-produk.png'
+import iot from '../images/iot-produk.png'
+import artagrow from '../images/artagrow-produk.png'
+
 // IMPORT FILES
 import '../App.css';
 import { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom"
 
 // IMPORT FILES REACT SLICK
 import React, { Component} from "react";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+
+// IMPORT COMPONENTS
+import Header from "../components/header";
+import Footer from "../components/footer";
+
+// IMPORT ARROW BUTTON IMAGE
+import panahNext from "../panahnext.png";
 
 // IMPORT PRODUCT CARD
 // import {
@@ -50,7 +66,8 @@ import 'slick-carousel/slick/slick-theme.css'
 // } from "@material-tailwind/react";
 
 
-function home() {
+const Home = () => {
+  const navigate = useNavigate()
   // const [showVideo, setShowVideo] = useState(false);
 
   // const handlePlayVideo = () => {
@@ -144,23 +161,8 @@ function home() {
     <>
       <div>
         {/* HEADER */}
-        <div className='w-full h-[70px] bg-white drop-shadow-2xl flex items-center justify-center'>
-          <div className='flex flex-row mr-[190px] items-center'>
-            <img src={logo} className='w-[40px] mr-[10px]' />
-            <img src={textLogo} className='h-[30px]' />
-          </div>
-          <div className='flex flex-row'>
-            <h1 className='mr-[40px]'>Home</h1>
-            <h1 className='mr-[40px]'>About</h1>
-            <h1 className='mr-[40px]'>Products</h1>
-            <h1 className='mr-[40px]'>Careers</h1>
-            <h1 className='mr-[40px]'>Gallery</h1>
-            <h1 className='mr-[40px]'>Clients & Supported</h1>
-            <h1 className='mr-[40px]'>Blog</h1>
-            <h1 className='mr-[40px]'>Contact</h1>
-          </div>
-        </div>
-
+        <Header />
+        {/* END OF HEADER */}
         {/* HOME */}
         <div
           className="relative bg-cover bg-center h-[700px] flex items-center"
@@ -236,20 +238,112 @@ function home() {
               </button>
             </div>
           )} */}
-        <div className='w-full pb-[250px] mb-[0px] mt-[230px] px-[312px] rounded-tl-[100px] rounded-br-[100px] ' style={{
+        <div className='w-full py-[100px] mt-[230px] px-10 rounded-tl-[100px] rounded-br-[100px] justify-center' style={{
           background: 'linear-gradient(180deg, #00AF46 0%, #338755 40.1%, #338755 61.46%, #0CAE4D 89.58%) '
         }}>
-          
-          {/* <div className='w-full flex mt-[250px] items-center justify-center '> */}
-          <div className="mt-[250px] flex w-full h-full items-center flex-col relative">
-            <div className='w-[1026px]  text-center font-medium leading-[56px] mt-[40px] '>
+          {/* CARDS */}
+          <div className=" flex w-full h-full items-center flex-col relative">
+            <div className='w-[1026px]  text-center font-medium leading-[56px]'>
               <h1 className="text-white text-[48px] font-['Poppins']">Our Product:
               <span className='text-black'> Unleash the Power of Agriculture Excellence</span></h1>
             </div>
-            <div className='w-[814px] h-full text-center mt-[40px] '>
+            <div className='w-[814px] h-full text-center mt-[40px] mb-[40px]'>
               <h1 className="text-[20px] font-['Inter'] text-[#ffffffff] ">Transforming Farms with Cutting-edge Technology and <br />Sustainable Practices</h1>
             </div>
           </div>
+
+          {/* CARDS */}
+          <div className='flex flex-cols-3 gap-4 justify-center'>
+            <div class="max-w-sm overflow-hidden ">
+              <img className="w-full bg-white rounded-xl shadow-lg" src={artamart} alt="Sunset in the mountains"/>
+              <div class="px-6 py-4">
+                <div class="font-bold text-lg mb-2 text-[#ffffff]">Partnership</div>
+                <div class="font-bold text-2xl mb-2 text-[#ffffff]">Arta Mart</div>
+                <p class="text-base text-[#ffffff]">
+                  Menyediakan penjualan beragam produk pertanian ke B2B dengan model kemitraan <br /> <br />
+                </p>
+              </div>
+              <div class="px-6 pt-2 pb-2">
+                <span class="inline-block bg-[#ffffff] rounded-full px-3 py-1 text-sm font-semibold text-[#338755D6] mr-2 mb-2">AGRICULTURAL</span>
+              </div>
+              <div class="px-6 pt-2 pb-2">
+                <button 
+                    data-te-ripple-init
+                    data-te-ripple-color="light" className = "hover:opacity-40" 
+                    onClick={() => navigate('/produk') }>Learn more
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    strokeWidth={1.5} 
+                    stroke="#000000" 
+                    className="w-6 h-6 inline-block ml-1">
+                  <path strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="max-w-sm overflow-hidden ">
+              <img className="w-full bg-white rounded-xl shadow-lg" src={iot} alt="Sunset in the mountains"/>
+              <div class="px-6 py-4">
+                <div class="font-bold text-lg mb-2 text-[#ffffff]">Green House</div>
+                <div class="font-bold text-2xl mb-2 text-[#ffffff]">IoT System</div>
+                <p class="text-base text-[#ffffff]">
+                Kebun yang terintegrasi dengan sistem IoT dan website <br /> <br />
+                </p>
+              </div>
+              <div class="px-6 pt-2 pb-2">
+                <span class="inline-block bg-[#ffffff] rounded-full px-3 py-1 text-sm font-semibold text-[#338755D6] mr-2 mb-2">...</span>
+              </div>
+              <div class="px-6 pt-2 pb-2">
+                <button>Learn more
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    strokeWidth={1.5} 
+                    stroke="#000000" 
+                    className="w-6 h-6 inline-block ml-1">
+                  <path strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="max-w-sm overflow-hidden ">
+              <img className="w-full bg-white rounded-xl shadow-lg" src={artagrow} alt="Sunset in the mountains"/>
+              <div class="px-6 py-4">
+                <div class="font-bold text-lg mb-2 text-[#ffffff]">Mobile Application</div>
+                <div class="font-bold text-2xl mb-2 text-[#ffffff]">Artagrow Application</div>
+                <p class="text-base text-[#ffffff]">
+                Aplikasi mobile untuk mendukung aktivitas manajemen pertanian agar lebih mudah dan efisien
+                </p>
+              </div>
+              <div class="px-6 pt-2 pb-2">
+                <span class="inline-block bg-[#ffffff] rounded-full px-3 py-1 text-sm font-semibold text-[#338755D6] mr-2 mb-2">Mobile App</span>
+              </div>
+              <div class="px-6 pt-2 pb-2">
+                <button>Learn more
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    strokeWidth={1.5} 
+                    stroke="#000000" 
+                    className="w-6 h-6 inline-block ml-1">
+                  <path strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          {/* <div className='w-full flex mt-[250px] items-center justify-center '> */}
+         
           
           {/* VISION AND MISSION */}
           {/* <div className='w-full flex mt-[250px] items-center justify-center '>
@@ -420,81 +514,75 @@ function home() {
                 </Slider>
               </div>
           </div>
+        </div>  
         {/* END OF OUR CLIENT & SUPPORTED BY*/}
-        {/* FOOTER*/}
-        <footer class="w-full h-[300px] bg-black text-white text-center py-4 flex items-center justify-center">
-          <div class="container mx-auto">
-            <h3 className='text-4xl font-bold text-white font-family'>ARTA GROW PERSADA</h3> <br />
-              <p className='font italic'>Growing The Future of Agricultur in Indonesia
-              </p>
-                <div class="container mx-auto py-8 flex items-center justify-center">
-                  {/* <a href="#" class="text-white hover:text-gray-400 transition duration-300"> */}
-                  <div className='flex flex-row'>
-                      {/* LOGO INSTAGRAM */}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-8 w-10 mr-[10px] my-[4px] object-cover transition duration-300 transform hover:scale-125"
-                        fill="#ffffffff"
-                        viewBox="0 0 24 24">
-                        <path
-                          d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                      </svg>
-                      {/* LOGO YOUTUBE */}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-10 w-10 mr-[14px] object-cover transition duration-300 transform hover:scale-125"
-                        fill="#ffffffff"
-                        viewBox="0 0 24 24">
-                        <path
-                          d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
-                      </svg>
-                      {/* LOGO LINKEDIN */}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-8 w-8 my-[2px] mr-[14px] object-cover transition duration-300 transform hover:scale-125"
-                        fill="#ffffffff"
-                        viewBox="0 0 24 24"
-                        >
-                        <path
-                          d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                      </svg>
-                      {/* LOGO TIKTOK */}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512"
-                        class="h-8 w-7 mr-[10px] my-[4px] object-cover transition duration-300 transform hover:scale-125">
-                        <path
-                          fill="#ffffffff"
-                          d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
-                      </svg>
-                      {/* LOGO FACEBOOK */}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-8 w-8 my-[2px] object-cover transition duration-300 transform hover:scale-125"
-                        fill="#ffffffff"
-                        viewBox="0 0 24 24">
-                        <path
-                          d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
-                      </svg>
-                    </div>
-                  {/* </a> */}
-                </div>
-                  <div class= "copyright">
-                    &copy; Copyright
-                    <strong> ARTA GROW PERSADA. </strong> All Rights Reserved.
-                    <h5>Designed by
-                      <span className='text-[#338755D6]'>
-                        <a href="artagrow.com" > Arta Grow Persada</a>
-                      </span>
-                    </h5>                  
+        <section>
+          <div className="mt-[100px] w-full h-[700px] bg-[#8EC4A4] pt-[40px] items-center">
+            <div className="w-full h-[47px] flex items-center justify-center mb-[50px]">
+              <h1 className="text-[50px] font-['Hint Madurai'] text-[#000000]">Contact</h1>
+            </div>
+            <div className=''>
+              <div className='w-9/12 mx-auto rounded-[40px] bg-[#ffffff] flex justify-end'> 
+                <div className='flex flex-col gap-8 mx-auto my-auto justify-center'>
+                  <div className='px-4 py-4 bg-[#338755D6] rounded-full'>
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      fill="none" viewBox="0 0 24 24" 
+                      strokeWidth={1.5} stroke="#ffffff" 
+                      className="w-10 h-12 mx-auto">
+                      <path 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
+                    </svg>
                   </div>
+                  <div><img src={green_house} alt="" className='w-20 h-20 mx-auto px-2 py-2 bg-[#338755D6] rounded-full'/></div>
+                  <div className='px-4 py-4 bg-[#338755D6] rounded-full'>
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      strokeWidth={1.5} 
+                      stroke="#ffffff" 
+                      className="w-10 h-12 mx-auto">
+                      <path 
+                        strokeLinecap="round" 
+                        d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
+                    </svg>
+
+                  </div>
+                  <div className='px-4 py-4 bg-[#338755D6] rounded-full'>
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      fill="none" viewBox="0 0 24 24" 
+                      strokeWidth={1.5} 
+                      stroke="#ffffff" 
+                      className="w-10 h-12 mx-auto ">
+                      <path 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                    </svg>
+                  </div>
+                  
+                </div>
+                <div className='w-10/12 rounded-[40px] bg-[#338755] flex flex-col gap-4 text-white text-[30px]'> 
+                  <div className='ml-14 mt-14'><h1 className='font-bold'>Office Location </h1>Jl Sebuku Gang 8 No 8, Blimbing, Malang</div>
+                  <div className='ml-14'><h1 className='font-bold'>Green House Location </h1>Jl Notodiharjo, Bulukerto, Bumuaji, Batu</div>
+                  <div className='ml-14'><h1 className='font-bold'>Email </h1>artasebuku@gmail.com</div>
+                  <div className='ml-14 mb-14'><h1 className='font-bold'>Call</h1>+628783858724</div>
+                </div>
+              </div>
+            </div>
           </div>
-        </footer>
+        </section>
+        {/* FOOTER*/}
+          <Footer />
         {/* END OF FOOTER */}
-      </div>
+      
       
     </>
   )
 }
 
-export default home;
+export default Home;
