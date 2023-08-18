@@ -7,18 +7,18 @@ const Footer = () => {
     return (
         <>
              {/* FOOTER*/}
-        <footer class="w-full h-[300px] bg-black text-white text-center py-4 flex items-center justify-center">
-          <div class="container mx-auto">
+        <footer className="w-full h-[300px] bg-black text-white text-center py-4 flex items-center justify-center">
+          <div className="container mx-auto">
             <h3 className='text-4xl font-bold text-white font-family'>ARTA GROW PERSADA</h3> <br />
               <p className='font italic'>Growing The Future of Agricultur in Indonesia
               </p>
-                <div class="container mx-auto py-8 flex items-center justify-center">
+                <div className="container mx-auto py-8 flex items-center justify-center">
                   {/* <a href="#" class="text-white hover:text-gray-400 transition duration-300"> */}
                   <div className='flex flex-row'>
                       {/* LOGO INSTAGRAM */}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="h-8 w-10 mr-[10px] my-[4px] object-cover transition duration-300 transform hover:scale-125"
+                        className="h-8 w-10 mr-[10px] my-[4px] object-cover transition duration-300 transform hover:scale-125"
                         fill="#ffffffff"
                         viewBox="0 0 24 24">
                         <path
@@ -27,7 +27,7 @@ const Footer = () => {
                       {/* LOGO YOUTUBE */}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="h-10 w-10 mr-[14px] object-cover transition duration-300 transform hover:scale-125"
+                        className="h-10 w-10 mr-[14px] object-cover transition duration-300 transform hover:scale-125"
                         fill="#ffffffff"
                         viewBox="0 0 24 24">
                         <path
@@ -36,7 +36,7 @@ const Footer = () => {
                       {/* LOGO LINKEDIN */}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="h-8 w-8 my-[2px] mr-[14px] object-cover transition duration-300 transform hover:scale-125"
+                        className="h-8 w-8 my-[2px] mr-[14px] object-cover transition duration-300 transform hover:scale-125"
                         fill="#ffffffff"
                         viewBox="0 0 24 24"
                         >
@@ -47,7 +47,7 @@ const Footer = () => {
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 448 512"
-                        class="h-8 w-7 mr-[10px] my-[4px] object-cover transition duration-300 transform hover:scale-125">
+                        className="h-8 w-7 mr-[10px] my-[4px] object-cover transition duration-300 transform hover:scale-125">
                         <path
                           fill="#ffffffff"
                           d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
@@ -55,7 +55,7 @@ const Footer = () => {
                       {/* LOGO FACEBOOK */}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="h-8 w-8 my-[2px] object-cover transition duration-300 transform hover:scale-125"
+                        className="h-8 w-8 my-[2px] object-cover transition duration-300 transform hover:scale-125"
                         fill="#ffffffff"
                         viewBox="0 0 24 24">
                         <path
@@ -64,7 +64,7 @@ const Footer = () => {
                     </div>
                   {/* </a> */}
                 </div>
-                  <div class= "copyright">
+                  <div className= "copyright">
                     &copy; Copyright
                     <strong> ARTA GROW PERSADA. </strong> All Rights Reserved.
                     <h5>Designed by

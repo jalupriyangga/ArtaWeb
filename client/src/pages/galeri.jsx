@@ -1,37 +1,11 @@
 import logo from '../images/Frame (1).png'
 import textLogo from '../images/text-artagrow.png'
 import bg_home from '../images/bg-hero1.jpeg'
-// import CEO from './images/CEO.png'
-// import vision from './images/icon/growth.png'
-// import palm from './images/icon/palm.png'
-// import harvest from './images/icon/harvest (1).png'
-// import service from './images/icon/public-service.png'
-
-// // FOTO CLIENT
-// import ayam_cao from './images/clients/ayam.png'
-// import bakmie_hokki from './images/clients/bakmie-hokki.jpeg'
-// import hydroponic_farm from './images/clients/hydroponic-farm.jpeg'
-// import katering from './images/clients/katering.png'
-// import kebab from './images/clients/kebab.png'
-// import kedai from './images/clients/kedai.png'
-// import kober from './images/clients/kober.png'
-// import lowcal from './images/clients/lowcal.png'
-// import tomo from './images/clients/tomo.jpg'
-
-// // FOTO SUPPORTED BY
-// import awmm_ub from './images/clients/awmm-ub.png'
-// import bem_fia_ub from './images/clients/bem-fia-ub-22.png'
-// import bem_fp_ub from './images/clients/bem-fp-ub-21.png'
-// import eo from './images/clients/eo-logo.png'
-// import GN1000startup from './images/clients/Logo_Gerakan_Nasional_1000_Startup_Digital.png'
-// import AstraStartupCom from './images/clients/Logo-Astra-Startup-Community.png'
-// import SD_Bareng3 from './images/clients/sd-bareng-3.png'
-// import UB from './images/clients/UB.png'
-// import yayasan_apsai from './images/clients/yayasan-apsai.png'
 
 // IMPORT FILES
 import '../App.css';
 import { useState, useEffect, useRef } from "react";
+import nextArrow from '../components/NextArrow';
 
 // IMPORT FILES REACT SLICK
 import React, { Component } from "react";
@@ -104,49 +78,11 @@ import Footer from "../components/footer"
 //   Typography,
 //   Button,
 // } from "@material-tailwind/react";
-// function SampleNextArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{ 
-//         ...style, 
-//         display: "block",
-//         background: "grey",
-//       }}
-//       onClick={onClick}
-//     />
-//   );
-// }
-
-// function SamplePrevArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{ 
-//         ...style, display: "block", width: '50px', height: '50px', background: "grey", fontsize: "30px", color: "blue", zIndex: 99, marginTop: "100px"
-//       }}
-//       onClick={onClick}
-//     />
-//   );
-// }
-// const ArrowLeft = (props) => (
-//   <button
-//       {...props}
-//       className={s.prev}/>
-// );
-// const ArrowRight = (props) => (
-//   <button
-//       {...props}
-//       className={s.next}/>
-// );
-
 
 function galeri () {
   var settings = {
     arrow: true,
-    // nextArrow: <ArrowRight />,
+    nextArrow: <nextArrow />,
     // prevArrow: <ArrowLeft />,
     dots: false,
     infinite: true,
@@ -164,7 +100,7 @@ function galeri () {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           arrow: false
@@ -245,14 +181,14 @@ function galeri () {
         
         {/* GALLERY CONTENT */}
         
-        <div className='w-full  pt-[95px] pb-[95px] px-[100px] items-center justify-center drop-shadow-2xl' style={{
+        <div className='w-full  pt-[95px] pb-[95px] px-[30px] md:px-[100px] items-center justify-center drop-shadow-2xl' style={{
             background: 'linear-gradient(180deg, #ABF5AA 0%, #e8f4ea 48.1%, #e8f4ea 60.46%, #ABF5AA 89.58%) '
           }}>
             <div className='rounded-2xl w-full py-[30px] items-center justify-center mb-[50px]' style={{background: '#ffffff'}}>
                   {/* OUR GARDEN */}
-                  <div class="flex flex-row justify center">
-                    <div className="w-[full] h-full ml-[50px]">
-                      <h1 className="text-[48px] font-['Hint Madurai'] text-[#000000] leading-1">Our <br />Garden <br /></h1>
+                  <div class="flex md:flex-row justify center ">
+                    <div className="w-full h-full ml-[25px] md:ml-[50px]">
+                      <h1 className="text-[40px] md:text-[48px] font-['Hint Madurai'] text-[#000000] leading-1">Our <br />Garden <br /></h1>
                       <h2 className="text-[20px] font-['Hint Madurai'] text-[#858585] pb-[100px]">Arta Grow Gallery </h2>
                       
                     </div>
@@ -287,8 +223,8 @@ function galeri () {
             <div className='rounded-2xl w-full py-[30px] items-center justify-center mb-[50px]' style={{background: '#ffffff'}}>
                   {/* OUR GREEN HOUSE TITLE */}
                   <div class="flex flex-row justify center">
-                    <div className="w-[full] h-full ml-[50px]">
-                      <h1 className="text-[48px] font-['Hint Madurai'] text-[#000000] leading-1">Our Green <br />House</h1>
+                    <div className="w-full h-full ml-[25px] md:ml-[50px]">
+                      <h1 className="text-[40px] md:text-[48px] font-['Hint Madurai'] text-[#000000] leading-1">Our Green <br />House</h1>
                       <h2 className="text-[20px] font-['Hint Madurai'] text-[#858585] pb-[100px]">Arta Grow Gallery </h2>
                       
                     </div>
@@ -328,8 +264,8 @@ function galeri () {
             <div className='rounded-2xl w-full py-[30px] items-center justify-center mb-[50px]' style={{background: '#ffffff'}}>
                   {/* OUR AGRITECH DEDICATION TITLE */}
                   <div class="flex flex-row justify center">
-                    <div className="w-[full] h-full ml-[50px]">
-                      <h1 className="text-[48px] font-['Hint Madurai'] text-[#000000] leading-1">Our Agritech<br />Dedication</h1>
+                    <div className="w-full h-full ml-[25px] md:ml-[50px]">
+                      <h1 className="text-[40px] md:text-[48px] font-['Hint Madurai'] text-[#000000] leading-1">Our Agritech<br />Dedication</h1>
                       <h2 className="text-[20px] font-['Hint Madurai'] text-[#858585] pb-[100px]">Arta Grow Gallery </h2>
                       
                     </div>
@@ -364,8 +300,8 @@ function galeri () {
             <div className='rounded-2xl w-full py-[30px] items-center justify-center mb-[50px]' style={{background: '#ffffff'}}>
                   {/* OUR CLIENTS TITLE */}
                   <div class="flex flex-row justify center">
-                    <div className="w-[full] h-full ml-[50px]">
-                      <h1 className="text-[48px] font-['Hint Madurai'] text-[#000000] leading-1">Our<br />Achievement</h1>
+                    <div className="w-full h-full ml-[25px] md:ml-[50px]">
+                      <h1 className="text-[40px] md:text-[48px] font-['Hint Madurai'] text-[#000000] leading-1">Our<br />Achievement</h1>
                       <h2 className="text-[20px] font-['Hint Madurai'] text-[#858585] pb-[100px]">Arta Grow Gallery </h2>
                       
                     </div>
@@ -395,8 +331,8 @@ function galeri () {
             <div className='rounded-2xl w-full py-[30px] items-center justify-center' style={{background: '#ffffff'}}>
                   {/* OUR PLANT PRODUCT TITLE */}
                   <div class="flex flex-row justify center">
-                    <div className="w-[full] h-full ml-[50px]">
-                      <h1 className="text-[48px] font-['Hint Madurai'] text-[#000000] leading-1">Our Plant<br />Product</h1>
+                    <div className="w-full h-full ml-[25px] md:ml-[50px]">
+                      <h1 className="text-[40px] md:text-[48px] font-['Hint Madurai']x] md: text-[#000000] leading-1">Our Plant<br />Product</h1>
                       <h2 className="text-[20px] font-['Hint Madurai'] text-[#858585] pb-[100px]">Arta Grow Gallery </h2>
                       
                     </div>

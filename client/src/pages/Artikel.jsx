@@ -18,16 +18,16 @@ import bg_home from '../images/bg-hero1.jpeg'
 // import lowcal from './images/clients/lowcal.png'
 // import tomo from './images/clients/tomo.jpg'
 
-// // FOTO SUPPORTED BY
-// import awmm_ub from './images/clients/awmm-ub.png'
-// import bem_fia_ub from './images/clients/bem-fia-ub-22.png'
-// import bem_fp_ub from './images/clients/bem-fp-ub-21.png'
-// import eo from './images/clients/eo-logo.png'
-// import GN1000startup from './images/clients/Logo_Gerakan_Nasional_1000_Startup_Digital.png'
-// import AstraStartupCom from './images/clients/Logo-Astra-Startup-Community.png'
-import SD_Bareng3 from '../images/clients/sd-bareng-3.png'
-import UB from '../images/clients/UB.png'
-import yayasan_apsai from '../images/clients/yayasan-apsai.png'
+// // FOTO ARTIKEL
+import Era_tani from '../images/blog/Era_tani.jpg';
+import ibu_ibu_meringis from '../images/blog/ibu_ibu_meringis.jpeg';
+import Inovasi_Bertani_Ala_Pemuda_Gobleg from '../images/blog/Inovasi_Bertani_Ala_Pemuda_Gobleg.jpg';
+import jack_ma from '../images/blog/jack-ma.jpeg';
+import menko_luhut_binsar_pandjaitan from '../images/blog/menko-luhut-binsar-pandjaitan.jpeg';
+import petani from '../images/blog/petani.jpg';
+import seminar_nasional from '../images/blog/seminar_nasional.jpg';
+import Tani_Center_milik_Semaai from '../images/blog/Tani_Center_milik_Semaai.jpg';
+import teknologi_bantu_stabilisasi_harga_pangan from '../images/blog/teknologi-bantu-stabilisasi-harga-pangan.jpeg';
 
 // IMPORT FILES
 // import '../App.css';
@@ -51,8 +51,6 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 
 
-const images = [garden1, garden2, garden3, garden4, SD_Bareng3, UB, yayasan_apsai]
-
 // IMPORT PRODUCT CARD
 // import {
 //   Card,
@@ -65,37 +63,34 @@ const images = [garden1, garden2, garden3, garden4, SD_Bareng3, UB, yayasan_apsa
 
 
 function Artikel() {
-    const [slideIndex, setSlideIndex] = useState(0);
 
-  var settings = {
-    arrows: false,
+  const settings = {
     dots: true,
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    centerPadding: "0px",
-    speed: 500,
+    arrows: false,
+    infinite: false,
     slidesToShow: 3,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    beforeChange: (_current, next) => setSlideIndex(next),
-    autoplay: false,
-      cssEase: "linear",
-      appendDots: (dots) => (
-        <div>
-          <ul style={{ margin: "0px" }}> {dots} </ul>
-        </div>
-      ),
-      customPaging: (current, next) => (
-        <div className={current === slideIndex ? 'dot dot-active' : 'dot'}>
-        </div>
-      ),
+    slidesToScroll: 3,
+    customPaging: i => (
+      <div
+        style={
+          
+          {
+          width: "30px",
+          color: "#338755",
+          border: "2px #338755 solid",
+          borderRadius: "10px",
+          margin: "10px",
+        }}
+      >
+        {i + 1}
+      </div>
+    ),
 
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           // dots: true
@@ -104,7 +99,7 @@ function Artikel() {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           // initialSlide: 2
         }
@@ -141,24 +136,79 @@ function Artikel() {
           </div>
         </div>
         {/* ABOUT US */}
-        <div class = 'container' className='bg-white h-full mb-[55px]'>
-                <div class ='Header' className="w-full h-[47px] flex items-center justify-center my-[30px]">
+        <div class = 'container' className='bg-[#8EC4A4] h-full pb-20'>
+                <div class ='Header' className="w-full h-[47px] flex items-center justify-center py-14">
                     <h1 className="text-[48px] font-['Hint Madurai'] text-[#338755]">NEWS</h1>
                 </div>
             <div className="w-full h-full">
-                
-                <div className='mb-[100px]'>
-                    <div class = "slider" className="h-full">
+                <div>
+                    <div className='justify-center '>
                         <Slider {...settings}>
-                            {  
-                                images.map((img, index)=>(
-                                <div className={index === slideIndex ? 'slide slide-active': 'slide'} key={index}>
-                                    <div class = 'holder' className='items-center justify-center bg-[#338755] w-full'>
-                                        <img src={img} alt="" />
-                                    </div>
-                                </div>
-                                ))
-                            }
+                          <div className='bg-white border-b-8 border-r-4 border-l-4 border-t-2 border-gray-700 border-opacity-50 border-blur-25  shadow-xl rounded-2xl shadow-xl py-6'>
+                            <div className='relative items-center align-middle justify-center'>
+                              <img src={Era_tani} alt='' className='w-11/12  mx-auto border-4'/>
+                              <div className="pt-6 px-6 text-center text-[#338755D6] md:block text-3xl">
+                                Startup Pertanian Eratani Raih Pendanaan Awal Rp 90 Miliar<br /> <br />
+                              </div>
+                            </div>
+                          </div>
+                          <div className='bg-white border-b-8 border-r-4 border-l-4 border-t-2 border-gray-700 border-opacity-50 border-blur-25  shadow-xl rounded-2xl shadow-xl py-6'>
+                            <div className='relative items-center align-middle justify-center'>
+                              <img src={ibu_ibu_meringis} alt='' className='w-11/12  mx-auto border-4'/>
+                              <div className="pt-6 px-6 text-center text-[#338755D6] md:block text-3xl">
+                                Wadahi Start Up Pertanian Pemula, Polbangtan Kementan Luncurkan IBT
+                              </div>
+                            </div>
+                          </div>
+                          <div className='bg-white border-b-8 border-r-4 border-l-4 border-t-2 border-gray-700 border-opacity-50 border-blur-25  shadow-xl rounded-2xl shadow-xl py-6'>
+                            <div className='relative items-center align-middle justify-center'>
+                              <img src={Inovasi_Bertani_Ala_Pemuda_Gobleg} alt='' className='w-11/12  mx-auto border-4'/>
+                              <div className="pt-6 px-6 text-center text-[#338755D6] md:block text-3xl">
+                                Startup Pertanian Semaai Raih Rp45 Miliar dari Investor AS & Singapura
+                              </div>
+                            </div>
+                          </div>
+                          <div className='bg-white border-b-8 border-r-4 border-l-4 border-t-2 border-gray-700 border-opacity-50 border-blur-25  shadow-xl rounded-2xl shadow-xl py-6'>
+                            <div className='relative items-center align-middle justify-center'>
+                              <img src={jack_ma} alt='' className='w-11/12  mx-auto border-4'/>
+                              <div className="pt-6 px-6 text-center text-[#338755D6] md:block text-3xl">
+                              Jack Ma Investasi di Startup Pertanian China
+                              </div>
+                            </div>
+                          </div>
+                          <div className='bg-white border-b-8 border-r-4 border-l-4 border-t-2 border-gray-700 border-opacity-50 border-blur-25  shadow-xl rounded-2xl shadow-xl py-6'>
+                            <div className='relative items-center align-middle justify-center'>
+                              <img src={Era_tani} alt='' className='w-11/12  mx-auto border-4'/>
+                              <div className="pt-6 px-6 text-center text-[#338755D6] md:block text-3xl">
+                                Startup Pertanian Eratani Raih Pendanaan Awal Rp 90 Miliar<br /> <br />
+                              </div>
+                            </div>
+                          </div>
+                          <div className='bg-white border-b-8 border-r-4 border-l-4 border-t-2 border-gray-700 border-opacity-50 border-blur-25  shadow-xl rounded-2xl shadow-xl py-6'>
+                            <div className='relative items-center align-middle justify-center'>
+                              <img src={ibu_ibu_meringis} alt='' className='w-11/12  mx-auto border-4'/>
+                              <div className="pt-6 px-6 text-center text-[#338755D6] md:block text-3xl">
+                                Wadahi Start Up Pertanian Pemula, Polbangtan Kementan Luncurkan IBT
+                              </div>
+                            </div>
+                          </div>
+                          <div className='bg-white border-b-8 border-r-4 border-l-4 border-t-2 border-gray-700 border-opacity-50 border-blur-25  shadow-xl rounded-2xl shadow-xl py-6'>
+                            <div className='relative items-center align-middle justify-center'>
+                              <img src={Inovasi_Bertani_Ala_Pemuda_Gobleg} alt='' className='w-11/12  mx-auto border-4'/>
+                              <div className="pt-6 px-6 text-center text-[#338755D6] md:block text-3xl">
+                                Startup Pertanian Semaai Raih Rp45 Miliar dari Investor AS & Singapura
+                              </div>
+                            </div>
+                          </div>
+                          <div className='bg-white border-b-8 border-r-4 border-l-4 border-t-2 border-gray-700 border-opacity-50 border-blur-25  shadow-xl rounded-2xl shadow-xl py-6'>
+                            <div className='relative items-center align-middle justify-center'>
+                              <img src={Era_tani} alt='' className='w-11/12  mx-auto border-4'/>
+                              <div className="pt-6 px-6 text-center text-[#338755D6] md:block text-3xl">
+                                Front End <br />Developer
+                              </div>
+                            </div>
+                          </div>
+                        
                         </Slider>
                     </div>
                 </div>

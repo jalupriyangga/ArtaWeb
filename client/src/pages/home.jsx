@@ -159,7 +159,7 @@ const Home = () => {
 
   return (
     <>
-      <div>
+      
         {/* HEADER */}
         <Header />
         {/* END OF HEADER */}
@@ -172,11 +172,11 @@ const Home = () => {
           }}
         >
           <div className="absolute inset-0 bg-green-800 opacity-80"></div>
-          <div className=" ml-[200px] relative z-10 flex  flex-col items-start">
-            <h1 className="text-7xl float-left font-bold text-white">Growing </h1>
-            <h1 className="text-7xl float-left font-bold text-white">The Future of</h1>
-            <h1 className="text-7xl float-left font-bold text-white">Agriculture For Indonesia</h1>
-            <div className='mt-[20px] h-full w-[700px]'>
+          <div className=" ml-12 relative z-10 flex  flex-col items-start">
+            <h1 className="text-5xl md:7xl float-left font-bold text-white">Growing </h1>
+            <h1 className="text-5xl float-left font-bold text-white">The Future of</h1>
+            <h1 className="text-5xl float-left font-bold text-white">Agriculture For Indonesia</h1>
+            <div className='mt-[20px] h-full'>
               <h1 className="text-1xl float-left text-white text-left font-medium " >Agriculture in Indonesia with sustainable practices, improved quality and quantity of produce, and customer satisfaction. Join us in creating a greener and prosperous future.</h1>
               <h1 className="text-1xl float-left text-white text-left font-medium " >Welcome to Arta Grow Persada.</h1>
             </div>
@@ -184,18 +184,18 @@ const Home = () => {
             {/* <h1 className="text-8xl float-left font-bold text-emerald-950">For Indonesia</h1> */}
           </div>
         </div>
-        </div>
+        
         {/* ABOUT US */}
 
-        <div className="mt-[55px] flex w-full h-full items-center flex-col relative">
-          <div className="w-[174px] h-[47px] bg-[#33875529] rounded-full flex items-center justify-center">
-            <h1 className="text-[24px] font-['Inter']  text-[#338755]">ABOUT US </h1>
+        <div className="mt-12 flex w-full h-full items-center flex-col relative">
+          <div className="w-[174px] h-10 md:h-[47px] bg-[#33875529] rounded-full flex items-center justify-center">
+            <h1 className="text-[18px] md:text-[24px] font-['Inter']  text-[#338755]">ABOUT US </h1>
           </div>
-          <div className='w-[1026px]  text-center font-medium leading-[56px] mt-[40px] '>
-            <h1 className="text-[48px] font-['Poppins']">Agribusiness Startup is <span className='text-[#338755D6]'>Contributing to Sustainable</span> Farming in Indonesia </h1>
+          <div className='w-full  text-center font-medium md:leading-[56px] mt-[40px] '>
+            <h1 className="text-[26px] md:text-[48px] font-['Poppins'] mx-12">Agribusiness Startup is <span className='text-[#338755D6]'>Contributing to Sustainable</span> Farming in Indonesia </h1>
           </div>
-          <div className='w-[814px] h-full text-center mt-[40px] '>
-            <h1 className="text-[20px] ">Startup agribisnis yang fokus terhadap dunia pertanian dan memiliki dedikasi tinggi untuk berkontribusi dalam pertanian Indonesia</h1>
+          <div className='w-full h-full text-center mt-[40px] '>
+            <h1 className="text-[15px] md:text-[20px] mx-12 ">Startup agribisnis yang fokus terhadap dunia pertanian dan memiliki dedikasi tinggi untuk berkontribusi dalam pertanian Indonesia</h1>
           </div>
 
           {/* Vidio youtube */}
@@ -238,35 +238,35 @@ const Home = () => {
               </button>
             </div>
           )} */}
-        <div className='w-full py-[100px] mt-[230px] px-10 rounded-tl-[100px] rounded-br-[100px] justify-center' style={{
+        <div className='w-full py-[100px] mt-20 md:mt-[230px] px-10 rounded-tl-[100px] rounded-br-[100px] justify-center' style={{
           background: 'linear-gradient(180deg, #00AF46 0%, #338755 40.1%, #338755 61.46%, #0CAE4D 89.58%) '
         }}>
           {/* CARDS */}
           <div className=" flex w-full h-full items-center flex-col relative">
-            <div className='w-[1026px]  text-center font-medium leading-[56px]'>
-              <h1 className="text-white text-[48px] font-['Poppins']">Our Product:
+            <div className='md:w-[768px] text-center font-medium md:leading-[56px]'>
+              <h1 className="text-white text-[26px] md:text-[40px] font-['Poppins'] mx-12">Our Product:
               <span className='text-black'> Unleash the Power of Agriculture Excellence</span></h1>
             </div>
-            <div className='w-[814px] h-full text-center mt-[40px] mb-[40px]'>
-              <h1 className="text-[20px] font-['Inter'] text-[#ffffffff] ">Transforming Farms with Cutting-edge Technology and <br />Sustainable Practices</h1>
+            <div className='w-full md:w-[768px] h-full text-center my-[40px] '>
+              <h1 className="text-[16px] md:text-[20px] font-['Inter'] text-[#ffffffff] mx-8">Transforming Farms with Cutting-edge Technology and Sustainable Practices</h1>
             </div>
           </div>
 
           {/* CARDS */}
-          <div className='flex flex-cols-3 gap-4 justify-center'>
-            <div class="max-w-sm overflow-hidden ">
-              <img className="w-full bg-white rounded-xl shadow-lg" src={artamart} alt="Sunset in the mountains"/>
-              <div class="px-6 py-4">
+          <div className='md:grid md:grid-cols-3 gap-4 justify-center'>
+            <div class="max-w-md overflow-hidden mx-auto">
+              <img className="mt-10 md:mt-0 mx-auto w-60 md:w-96 bg-white rounded-xl shadow-lg" src={artamart} alt="Sunset in the mountains"/>
+              <div class="px-20 md:px-6 py-4">
                 <div class="font-bold text-lg mb-2 text-[#ffffff]">Partnership</div>
                 <div class="font-bold text-2xl mb-2 text-[#ffffff]">Arta Mart</div>
                 <p class="text-base text-[#ffffff]">
                   Menyediakan penjualan beragam produk pertanian ke B2B dengan model kemitraan <br /> <br />
                 </p>
               </div>
-              <div class="px-6 pt-2 pb-2">
+              <div class="px-20 md:px-6 pt-2 pb-2">
                 <span class="inline-block bg-[#ffffff] rounded-full px-3 py-1 text-sm font-semibold text-[#338755D6] mr-2 mb-2">AGRICULTURAL</span>
               </div>
-              <div class="px-6 pt-2 pb-2">
+              <div class="px-20 md:px-6 pt-2 pb-2">
                 <button 
                     data-te-ripple-init
                     data-te-ripple-color="light" className = "hover:opacity-40" 
@@ -285,19 +285,19 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            <div class="max-w-sm overflow-hidden ">
-              <img className="w-full bg-white rounded-xl shadow-lg" src={iot} alt="Sunset in the mountains"/>
-              <div class="px-6 py-4">
+            <div class="max-w-md overflow-hidden mx-auto">
+              <img className="mt-10 md:mt-0 mx-auto w-60 md:w-96  bg-white rounded-xl shadow-lg" src={iot} alt="Sunset in the mountains"/>
+              <div class="px-20 md:px-6 py-4">
                 <div class="font-bold text-lg mb-2 text-[#ffffff]">Green House</div>
                 <div class="font-bold text-2xl mb-2 text-[#ffffff]">IoT System</div>
                 <p class="text-base text-[#ffffff]">
                 Kebun yang terintegrasi dengan sistem IoT dan website <br /> <br />
                 </p>
               </div>
-              <div class="px-6 pt-2 pb-2">
+              <div class="px-20 md:px-6 pt-2 pb-2">
                 <span class="inline-block bg-[#ffffff] rounded-full px-3 py-1 text-sm font-semibold text-[#338755D6] mr-2 mb-2">...</span>
               </div>
-              <div class="px-6 pt-2 pb-2">
+              <div class="px-20 md:px-6 pt-2 pb-2">
                 <button>Learn more
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
@@ -313,19 +313,19 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            <div class="max-w-sm overflow-hidden ">
-              <img className="w-full bg-white rounded-xl shadow-lg" src={artagrow} alt="Sunset in the mountains"/>
-              <div class="px-6 py-4">
+            <div class="max-w-md overflow-hidden mx-auto">
+              <img className="mt-10 md:mt-0 mx-auto w-60 md:w-96  bg-white rounded-xl shadow-lg" src={artagrow} alt="Sunset in the mountains"/>
+              <div class="px-20 md:px-6 py-4">
                 <div class="font-bold text-lg mb-2 text-[#ffffff]">Mobile Application</div>
                 <div class="font-bold text-2xl mb-2 text-[#ffffff]">Artagrow Application</div>
                 <p class="text-base text-[#ffffff]">
                 Aplikasi mobile untuk mendukung aktivitas manajemen pertanian agar lebih mudah dan efisien
                 </p>
               </div>
-              <div class="px-6 pt-2 pb-2">
+              <div class="px-20 md:px-6 pt-2 pb-2">
                 <span class="inline-block bg-[#ffffff] rounded-full px-3 py-1 text-sm font-semibold text-[#338755D6] mr-2 mb-2">Mobile App</span>
               </div>
-              <div class="px-6 pt-2 pb-2">
+              <div class="px-20 md:px-6 pt-2 pb-2">
                 <button>Learn more
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
@@ -517,47 +517,47 @@ const Home = () => {
         </div>  
         {/* END OF OUR CLIENT & SUPPORTED BY*/}
         <section>
-          <div className="mt-[100px] w-full h-[700px] bg-[#8EC4A4] pt-[40px] items-center">
+          <div className="mt-[100px] w-full bg-[#8EC4A4] py-[40px] items-center">
             <div className="w-full h-[47px] flex items-center justify-center mb-[50px]">
               <h1 className="text-[50px] font-['Hint Madurai'] text-[#000000]">Contact</h1>
             </div>
             <div className=''>
               <div className='w-9/12 mx-auto rounded-[40px] bg-[#ffffff] flex justify-end'> 
-                <div className='flex flex-col gap-8 mx-auto my-auto justify-center'>
-                  <div className='px-4 py-4 bg-[#338755D6] rounded-full'>
+                <div className='flex flex-col gap-12 md:gap-24 mx-auto my-auto justify-center'>
+                  <div className='mx-2 py-2 md:px-4 md:py-4 bg-[#338755D6] rounded-full'>
                     <svg 
                       xmlns="http://www.w3.org/2000/svg" 
                       fill="none" viewBox="0 0 24 24" 
                       strokeWidth={1.5} stroke="#ffffff" 
-                      className="w-10 h-12 mx-auto">
+                      className="w-8 h-10 md:w-10 md:h-12 mx-auto">
                       <path 
                         strokeLinecap="round" 
                         strokeLinejoin="round" 
                         d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
                     </svg>
                   </div>
-                  <div><img src={green_house} alt="" className='w-20 h-20 mx-auto px-2 py-2 bg-[#338755D6] rounded-full'/></div>
-                  <div className='px-4 py-4 bg-[#338755D6] rounded-full'>
+                  <div><img src={green_house} alt="" className='w-14 h-14 md:w-20 md:h-20 mx-2 md:mx-auto px-2 py-2 bg-[#338755D6] rounded-full'/></div>
+                  <div className='mx-2 py-2 md:px-4 md:py-4 bg-[#338755D6] rounded-full'>
                     <svg 
                       xmlns="http://www.w3.org/2000/svg" 
                       fill="none" 
                       viewBox="0 0 24 24" 
                       strokeWidth={1.5} 
                       stroke="#ffffff" 
-                      className="w-10 h-12 mx-auto">
+                      className="w-8 h-10 md:w-10 md:h-12 mx-auto">
                       <path 
                         strokeLinecap="round" 
                         d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
                     </svg>
 
                   </div>
-                  <div className='px-4 py-4 bg-[#338755D6] rounded-full'>
+                  <div className='mx-2 py-2 md:px-4 md:py-4 bg-[#338755D6] rounded-full'>
                     <svg 
                       xmlns="http://www.w3.org/2000/svg" 
                       fill="none" viewBox="0 0 24 24" 
                       strokeWidth={1.5} 
                       stroke="#ffffff" 
-                      className="w-10 h-12 mx-auto ">
+                      className="w-8 h-10 md:w-10 md:h-12 mx-auto">
                       <path 
                         strokeLinecap="round" 
                         strokeLinejoin="round" 
@@ -566,11 +566,11 @@ const Home = () => {
                   </div>
                   
                 </div>
-                <div className='w-10/12 rounded-[40px] bg-[#338755] flex flex-col gap-4 text-white text-[30px]'> 
-                  <div className='ml-14 mt-14'><h1 className='font-bold'>Office Location </h1>Jl Sebuku Gang 8 No 8, Blimbing, Malang</div>
-                  <div className='ml-14'><h1 className='font-bold'>Green House Location </h1>Jl Notodiharjo, Bulukerto, Bumuaji, Batu</div>
-                  <div className='ml-14'><h1 className='font-bold'>Email </h1>artasebuku@gmail.com</div>
-                  <div className='ml-14 mb-14'><h1 className='font-bold'>Call</h1>+628783858724</div>
+                <div className='w-10/12 rounded-[40px] bg-[#338755] flex flex-col gap-8 text-white text-[20px] md:text-[30px]'> 
+                  <div className='ml-10 mt-10 md:ml-14 md:mt-14'><h1 className='font-bold'>Office Location </h1>Jl Sebuku Gang 8 No 8, Blimbing, Malang</div>
+                  <div className='ml-10 ml-14 md:ml-14 md:mt-14'><h1 className='font-bold'>Green House Location </h1>Jl Notodiharjo, Bulukerto, Bumuaji, Batu</div>
+                  <div className='ml-10 ml-14 md:ml-14 md:mt-14'><h1 className='font-bold'>Email </h1>artasebuku@gmail.com</div>
+                  <div className='ml-10 ml-14 mb-14 md:ml-14 md:mt-14'><h1 className='font-bold'>Call</h1>+628783858724</div>
                 </div>
               </div>
             </div>
