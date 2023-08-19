@@ -16,7 +16,7 @@ const Header = () => {
         <>
         
         {/* HEADER */}
-        <nav className=' h-full bg-white drop-shadow-2xl items-center p-5 md:flex md:items-center md:justify-between'>
+        <nav className=' h-full bg-white drop-shadow-2xl items-center py-5 px-10 md:flex md:items-center md:justify-between'>
           <div className='flex items-center justify-between'>
             <div className='flex items-center'>
               <img src={logo} className='h-7 mr-2' />
@@ -33,12 +33,12 @@ const Header = () => {
           </div>
           <div className='flex flex-col items-start'>
             <ul className={menuOpen ? "open" : ""}>
-              <li><button onClick={() => navigate('/')} className='md:ml-2'>Home</button></li>
-              <li><button onClick={() => navigate('/about')} className='md:ml-2'>About</button></li>
-              <li><button onClick={() => navigate('/produk')} className='md:ml-2'>Products</button></li>
-              <li><button onClick={() => navigate('/karir')} className='md:ml-2'>Careers</button></li>
-              <li><button onClick={() => navigate('/galeri')} className='md:ml-2'>Gallery</button></li>
-              <li><button onClick={() => navigate('/artikel')} className='md:ml-2'>Blog</button></li>
+              <li><button onClick={() => navigate('/')} className='md:ml-4'>Home</button></li>
+              <li><button onClick={() => navigate('/about')} className='md:ml-4'>About</button></li>
+              <li><button onClick={() => navigate('/produk')} className='md:ml-4'>Products</button></li>
+              <li><button onClick={() => navigate('/karir')} className='md:ml-4'>Careers</button></li>
+              <li><button onClick={() => navigate('/galeri')} className='md:ml-4'>Gallery</button></li>
+              <li><button onClick={() => navigate('/artikel')} className='md:ml-4'>Blog</button></li>
             
             </ul>
           </div>

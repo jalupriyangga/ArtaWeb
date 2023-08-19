@@ -87,7 +87,6 @@ const Karir = () => {
             <div className="absolute inset-0 bg-green-800 opacity-80 "></div>
                 <div className=" mx-auto relative z-10 flex  flex-col items-start justify-center">
                 <h1 className="text-9xl font-bold text-white">Career</h1>
-                {/* <h1 className="text-8xl float-left font-bold text-emerald-950">For Indonesia</h1> */}
                 </div>
             </div>
             <div className="mt-[55px] mb-[55px] flex w-full h-full items-center flex-col ">

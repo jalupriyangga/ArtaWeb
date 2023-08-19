@@ -1,22 +1,4 @@
-import logo from '../images/Frame (1).png'
-import textLogo from '../images/text-artagrow.png'
 import bg_home from '../images/bg-hero1.jpeg'
-// import CEO from './images/CEO.png'
-// import vision from './images/icon/growth.png'
-// import palm from './images/icon/palm.png'
-// import harvest from './images/icon/harvest (1).png'
-// import service from './images/icon/public-service.png'
-
-// // FOTO CLIENT
-// import ayam_cao from './images/clients/ayam.png'
-// import bakmie_hokki from './images/clients/bakmie-hokki.jpeg'
-// import hydroponic_farm from './images/clients/hydroponic-farm.jpeg'
-// import katering from './images/clients/katering.png'
-// import kebab from './images/clients/kebab.png'
-// import kedai from './images/clients/kedai.png'
-// import kober from './images/clients/kober.png'
-// import lowcal from './images/clients/lowcal.png'
-// import tomo from './images/clients/tomo.jpg'
 
 // // FOTO ARTIKEL
 import Era_tani from '../images/blog/Era_tani.jpg';
@@ -30,9 +12,7 @@ import Tani_Center_milik_Semaai from '../images/blog/Tani_Center_milik_Semaai.jp
 import teknologi_bantu_stabilisasi_harga_pangan from '../images/blog/teknologi-bantu-stabilisasi-harga-pangan.jpeg';
 
 // IMPORT FILES
-// import '../App.css';
 import '../Artikel.css';
-import { useState, useEffect, useRef } from "react";
 
 // IMPORT FILES REACT SLICK
 import React, { Component} from "react";
@@ -40,27 +20,9 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-// IMPOR GARDEN PIC
-import garden1 from '../images/gallery/garden1.jpg'
-import garden2 from '../images/gallery/garden2.jpg'
-import garden3 from '../images/gallery/garden3.jpg'
-import garden4 from '../images/gallery/garden4.jpg'
-
 // IMPORT COMPONENTS
 import Header from "../components/header"
 import Footer from "../components/footer"
-
-
-// IMPORT PRODUCT CARD
-// import {
-//   Card,
-//   CardHeader,
-//   CardBody,
-//   CardFooter,
-//   Typography,
-//   Button,
-// } from "@material-tailwind/react";
-
 
 function Artikel() {
 
@@ -131,13 +93,12 @@ function Artikel() {
           <div className="absolute inset-0 bg-green-800 opacity-80"></div>
             <div className=" mx-auto relative z-10 flex  flex-col items-start justify-center">
               <h1 className="text-9xl font-bold text-white">BLOG</h1>
-              {/* <h1 className="text-8xl float-left font-bold text-emerald-950">For Indonesia</h1> */}
             </div>
           </div>
         </div>
         {/* ABOUT US */}
         <div class = 'container' className='bg-[#8EC4A4] h-full pb-20'>
-                <div class ='Header' className="w-full h-[47px] flex items-center justify-center py-14">
+                <div class ='Header' className="w-full h-[47px] flex items-center justify-center py-16">
                     <h1 className="text-[48px] font-['Hint Madurai'] text-[#338755]">NEWS</h1>
                 </div>
             <div className="w-full h-full">
@@ -172,29 +133,37 @@ function Artikel() {
                             <div className='relative items-center align-middle justify-center'>
                               <img src={jack_ma} alt='' className='w-11/12  mx-auto border-4'/>
                               <div className="pt-6 px-6 text-center text-[#338755D6] md:block text-3xl">
-                              Jack Ma Investasi di Startup Pertanian China
+                              <br />Jack Ma Investasi di Startup Pertanian China <br /><br />
                               </div>
                             </div>
                           </div>
                           <div className='bg-white border-b-8 border-r-4 border-l-4 border-t-2 border-gray-700 border-opacity-50 border-blur-25  shadow-xl rounded-2xl shadow-xl py-6'>
                             <div className='relative items-center align-middle justify-center'>
-                              <img src={Era_tani} alt='' className='w-11/12  mx-auto border-4'/>
+                              <img src={menko_luhut_binsar_pandjaitan} alt='' className='w-11/12  mx-auto border-4'/>
                               <div className="pt-6 px-6 text-center text-[#338755D6] md:block text-3xl">
-                                Startup Pertanian Eratani Raih Pendanaan Awal Rp 90 Miliar<br /> <br />
+                                <br />Luhut Ungkap Startup RI Terbanyak Nomor 6 di Dunia <br />
                               </div>
                             </div>
                           </div>
                           <div className='bg-white border-b-8 border-r-4 border-l-4 border-t-2 border-gray-700 border-opacity-50 border-blur-25  shadow-xl rounded-2xl shadow-xl py-6'>
                             <div className='relative items-center align-middle justify-center'>
-                              <img src={ibu_ibu_meringis} alt='' className='w-11/12  mx-auto border-4'/>
+                              <img src={petani} alt='' className='w-11/12  mx-auto border-4'/>
                               <div className="pt-6 px-6 text-center text-[#338755D6] md:block text-3xl">
-                                Wadahi Start Up Pertanian Pemula, Polbangtan Kementan Luncurkan IBT
+                                Startup Pertanian Dikucuri Pendanaan Awal Rp30 Miliar <br /><br />
                               </div>
                             </div>
                           </div>
                           <div className='bg-white border-b-8 border-r-4 border-l-4 border-t-2 border-gray-700 border-opacity-50 border-blur-25  shadow-xl rounded-2xl shadow-xl py-6'>
                             <div className='relative items-center align-middle justify-center'>
-                              <img src={Inovasi_Bertani_Ala_Pemuda_Gobleg} alt='' className='w-11/12  mx-auto border-4'/>
+                              <img src={seminar_nasional} alt='' className='w-11/12  mx-auto border-4'/>
+                              <div className="pt-6 px-6 text-center text-[#338755D6] md:block text-3xl">
+                                Perkuat Ekonomi Bangsa, Kementan Dorong Munculnya Startup Basis Pertanian
+                              </div>
+                            </div>
+                          </div>
+                          <div className='bg-white border-b-8 border-r-4 border-l-4 border-t-2 border-gray-700 border-opacity-50 border-blur-25  shadow-xl rounded-2xl shadow-xl py-6'>
+                            <div className='relative items-center align-middle justify-center'>
+                              <img src={Tani_Center_milik_Semaai} alt='' className='w-11/12  mx-auto border-4'/>
                               <div className="pt-6 px-6 text-center text-[#338755D6] md:block text-3xl">
                                 Startup Pertanian Semaai Raih Rp45 Miliar dari Investor AS & Singapura
                               </div>
@@ -202,13 +171,12 @@ function Artikel() {
                           </div>
                           <div className='bg-white border-b-8 border-r-4 border-l-4 border-t-2 border-gray-700 border-opacity-50 border-blur-25  shadow-xl rounded-2xl shadow-xl py-6'>
                             <div className='relative items-center align-middle justify-center'>
-                              <img src={Era_tani} alt='' className='w-11/12  mx-auto border-4'/>
+                              <img src={teknologi_bantu_stabilisasi_harga_pangan} alt='' className='w-11/12  mx-auto border-4'/>
                               <div className="pt-6 px-6 text-center text-[#338755D6] md:block text-3xl">
-                                Front End <br />Developer
+                                <br />Bukan Cuaca, Startup Ini Bongkar Masalah Harga Pangan di RI <br />
                               </div>
                             </div>
                           </div>
-                        
                         </Slider>
                     </div>
                 </div>

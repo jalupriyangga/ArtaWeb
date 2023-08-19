@@ -1,11 +1,5 @@
-// import logo from '../images/Frame (1).png'
-// import textLogo from '../images/text-artagrow.png'
 import bg_home from '../images/bg-hero1.jpeg'
 // import CEO from './images/CEO.png'
-// import vision from './images/icon/growth.png'
-// import palm from './images/icon/palm.png'
-// import harvest from './images/icon/harvest (1).png'
-// import service from './images/icon/public-service.png'
 
 // FOTO CLIENT
 import ayam_cao from '../images/clients/ayam.png'
@@ -39,7 +33,6 @@ import artagrow from '../images/artagrow-produk.png'
 
 // IMPORT FILES
 import '../App.css';
-import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom"
 
 // IMPORT FILES REACT SLICK
@@ -51,20 +44,6 @@ import 'slick-carousel/slick/slick-theme.css'
 // IMPORT COMPONENTS
 import Header from "../components/header";
 import Footer from "../components/footer";
-
-// IMPORT ARROW BUTTON IMAGE
-import panahNext from "../panahnext.png";
-
-// IMPORT PRODUCT CARD
-// import {
-//   Card,
-//   CardHeader,
-//   CardBody,
-//   CardFooter,
-//   Typography,
-//   Button,
-// } from "@material-tailwind/react";
-
 
 const Home = () => {
   const navigate = useNavigate()
@@ -135,16 +114,14 @@ const Home = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 2,
-          infinite: true,
-          // dots: true
+          infinite: true,          
         }
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
-          // initialSlide: 2
+          slidesToScroll: 1,        
         }
       },
       {
@@ -180,8 +157,7 @@ const Home = () => {
               <h1 className="text-1xl float-left text-white text-left font-medium " >Agriculture in Indonesia with sustainable practices, improved quality and quantity of produce, and customer satisfaction. Join us in creating a greener and prosperous future.</h1>
               <h1 className="text-1xl float-left text-white text-left font-medium " >Welcome to Arta Grow Persada.</h1>
             </div>
-            <button type="button" class="mt-[20px] focus:outline-none text-green-700 bg-white hover:bg-gray-300 focus:ring-4 focus:ring-green-300 font-bold rounded-full text-1xl py-3 px-7 mr-2 mb-2 dark:bg-white dark:hover:bg-slate-200 dark:focus:ring-green-800">Find Out More</button>
-            {/* <h1 className="text-8xl float-left font-bold text-emerald-950">For Indonesia</h1> */}
+            <button type="button" class="mt-[20px] focus:outline-none text-green-700 bg-white hover:bg-gray-300 focus:ring-4 focus:ring-green-300 font-bold rounded-full text-1xl py-3 px-7 mr-2 mb-2 dark:bg-white dark:hover:bg-slate-200 dark:focus:ring-green-800">Find Out More</button>            
           </div>
         </div>
         
@@ -342,7 +318,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-          {/* <div className='w-full flex mt-[250px] items-center justify-center '> */}
          
           
           {/* VISION AND MISSION */}

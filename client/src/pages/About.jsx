@@ -1,5 +1,3 @@
-import logo from '../images/Frame (1).png'
-import textLogo from '../images/text-artagrow.png'
 import bg_home from '../images/bg-hero1.jpeg'
 import CEO from '../images/CEO.png'
 import vision from '../images/icon/growth.png'
@@ -7,35 +5,12 @@ import palm from '../images/icon/palm.png'
 import harvest from '../images/icon/harvest (1).png'
 import service from '../images/icon/public-service.png'
 
-// FOTO CLIENT
-// import ayam_cao from './images/clients/ayam.png'
-// import bakmie_hokki from './images/clients/bakmie-hokki.jpeg'
-// import hydroponic_farm from './images/clients/hydroponic-farm.jpeg'
-// import katering from './images/clients/katering.png'
-// import kebab from './images/clients/kebab.png'
-// import kedai from './images/clients/kedai.png'
-// import kober from './images/clients/kober.png'
-// import lowcal from './images/clients/lowcal.png'
-// import tomo from './images/clients/tomo.jpg'
-
-// // FOTO SUPPORTED BY
-// import awmm_ub from './images/clients/awmm-ub.png'
-// import bem_fia_ub from './images/clients/bem-fia-ub-22.png'
-// import bem_fp_ub from './images/clients/bem-fp-ub-21.png'
-// import eo from './images/clients/eo-logo.png'
-// import GN1000startup from './images/clients/Logo_Gerakan_Nasional_1000_Startup_Digital.png'
-// import AstraStartupCom from './images/clients/Logo-Astra-Startup-Community.png'
-// import SD_Bareng3 from './images/clients/sd-bareng-3.png'
-// import UB from './images/clients/UB.png'
-// import yayasan_apsai from './images/clients/yayasan-apsai.png'
-
 // IMPORT FILES
 import '../App.css';
 import { useState, useEffect, useRef } from "react";
 
 // IMPORT FILES REACT SLICK
 import React, { Component } from "react";
-import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
@@ -59,17 +34,6 @@ import pengiriman from '../images/our-value/pengiriman.png'
 // IMPORT COMPONENTS
 import Header from "../components/header"
 import Footer from "../components/footer"
-
-
-// IMPORT PRODUCT CARD
-// import {
-//   Card,
-//   CardHeader,
-//   CardBody,
-//   CardFooter,
-//   Typography,
-//   Button,
-// } from "@material-tailwind/react";
 
 
 function About() {
@@ -448,143 +412,9 @@ function About() {
               <img src={ridho} alt='' className='w-full  mx-auto px-auto'/>
               <img src={clau} alt='' className='w-full mx-auto px-auto'/>
               <img src={ana} alt='' className='w-full  mx-auto px-auto'/>
-              {/* <div class="grid grid-cols-4 w-full justify-center absolute bottom-[80px] items-center">
-                <div className="bg-[#ffffff] rounded-full items-center justify-center mx-auto">
-                  <h1 className='font-bold text-center text-[#338755] mx-[20px] my-[10px] text-[15px]'>Hayu Pranitis</h1>
-                </div>
-                <div className="bg-[#ffffff] rounded-full items-center justify-center mx-auto">
-                  <h1 className='font-bold text-center text-[#338755] mx-[20px] my-[10px] text-[15px]'>Ridho Ramadhan A.H</h1>
-                </div>
-                <div className="bg-[#ffffff] rounded-full items-center justify-center mx-auto">
-                  <h1 className='font-bold text-center text-[#338755] mx-[20px] my-[10px] text-[15px]'>Claudya Ariesa Memorys</h1>
-                </div>
-                <div className="bg-[#ffffff] rounded-full items-center justify-center mx-auto">
-                  <h1 className='font-bold text-center text-[#338755] mx-[20px] my-[10px] text-[15px]'>Hidayati Nur Chasanah</h1>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>    
-
-        
-
-        {/* OUR CLIENT & SUPPORTED BY */}
-          {/* <div className="mt-[0px] flex-none w-full h-[700px] bg-[#ffffffff] pt-[40px]">
-            <div> */}
-              {/* OUR CLIENTS TITLE */}
-              {/* <div className="w-full h-[47px] flex items-center justify-center mb-[30px]">
-                <h1 className="text-[48px] font-['Hint Madurai'] text-[#338755]">Our Clients</h1>
-              </div> */}
-                {/* OUR CLIENTS SLIDER */}
-                {/* <Slider {...settings}>
-                    <div class='Card'>
-                        <img src={ayam_cao} alt='' className='w-[158px] mx-auto'/>
-                          <div className='card-body'>
-                          </div>
-                    </div>
-                    <div className='Card'>
-                        <img src={bakmie_hokki} alt='' className='w-[184px] mx-auto'/>
-                          <div className='card-body'>
-                          </div>
-                    </div>
-                    <div className='Card'>
-                        <img src={kebab} alt='' className='w-[246px] pt-[20px] mx-auto'/>
-                          <div className='card-body'>
-                          </div>
-                    </div>
-                    <div className='Card'>
-                        <img src={kedai} alt='' className='w-[150px] mx-auto'/>
-                          <div className='card-body'>
-                          </div>
-                    </div>
-                    <div className='Card'>
-                        <img src={kober} alt='' className='w-[161px] mx-auto'/>
-                          <div className='card-body'>
-                          </div>
-                    </div>
-                    <div className='Card'>
-                        <img src={katering} alt='' className='w-[160px] mx-auto'/>
-                          <div className='card-body'>
-                          </div>
-                    </div>
-                    <div className='Card'>
-                        <img src={lowcal} alt='' className='w-[170px] mx-auto'/>
-                          <div className='card-body'>
-                          </div>
-                    </div>
-                    <div className='Card'>
-                        <img src={hydroponic_farm} alt='' className='w-[160px] mx-auto'/>
-                          <div className='card-body'>
-                          </div>
-                    </div>
-                    <div className='Card'>
-                        <img src={tomo} alt='' className='w-[160px] mx-auto'/>
-                          <div className='card-body'>
-                          </div>
-                    </div>
-                </Slider> */}
-                {/* <br /> <br /><br /> */}
-                {/* SUPPORTED BY TITLE */}
-                {/* <div className="w-full h-[47px] flex items-center justify-center mb-[30px]">
-                  <h1 className="text-[48px] font-['Hint Madurai'] text-[#338755]">Supported By</h1>
-                </div> */}
-                {/* SUPPORTED BY SLIDER */}
-                {/* <Slider {...settings2}>
-                    <div class='Card'>
-                        <img src={ayam_cao} alt='' className='w-[158px] mx-auto'/>
-                          <div className='card-body'>
-                          </div>
-                    </div>
-                    <div class='Card'>
-                        <img src={awmm_ub} alt='' className='w-[173px] mx-auto'/>
-                          <div className='card-body'>
-                          </div>
-                    </div>
-                    <div className='Card'>
-                        <img src={GN1000startup} alt='' className='w-[180px] mx-auto'/>
-                          <div className='card-body'>
-                          </div>
-                    </div>
-                    <div className='Card'>
-                        <img src={UB} alt='' className='w-[170px] mx-auto'/>
-                          <div className='card-body'>
-                          </div>
-                    </div>
-                    <div className='Card'>
-                        <img src={bem_fia_ub} alt='' className='w-[170px] mx-auto'/>
-                          <div className='card-body'>
-                          </div>
-                    </div>
-                    <div className='Card'>
-                        <img src={bem_fp_ub} alt='' className='w-[145px] mx-auto'/>
-                          <div className='card-body'>
-                          </div>
-                    </div>
-                    <div className='Card'>
-                        <img src={yayasan_apsai} alt='' className='w-[230px] mx-auto'/>
-                          <div className='card-body'>
-                          </div>
-                    </div>
-                    <div className='Card'>
-                        <img src={eo} alt='' className='w-[430px] pt-[40px] mx-auto'/>
-                          <div className='card-body'>
-                          </div>
-                    </div>
-                    <div className='Card'>
-                        <img src={SD_Bareng3} alt='' className='w-[160px] mx-auto'/>
-                          <div className='card-body'>
-                          </div>
-                    </div>
-                    <div className='Card'>
-                        <img src={AstraStartupCom} alt='' className='w-[430px] pt-[30px] mx-auto'/>
-                          <div className='card-body'>
-                          </div>
-                    </div>
-                </Slider>
-              </div>
-          </div> */}
-        {/* END OF OUR CLIENT & SUPPORTED BY*/}
-        
         {/* FOOTER*/}
         <Footer />
         {/* END OF FOOTER */}
